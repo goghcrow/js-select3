@@ -1,0 +1,101 @@
+/**
+ * Select3
+ * @20160217
+ * @author xiaofeng
+ */
+.ui_select_s_line {
+	display: block;
+	width: auto;
+	/*height: auto;*/
+	max-height: 150px;
+	overflow: auto;
+}
+.ui_select_sl_wrap {
+	position: relative;
+	_zoom: 1;
+	line-height: 30px;
+}
+.ui_select_sl_key {
+	float: left;
+	width: 100px;
+	padding-left: 10px;
+	white-space: nowrap;
+    overflow: hidden;
+}
+.ui_select_sl_key span{
+	font-weight: bold;
+}
+.ui_select_sl_value {
+	margin-left: 100px;
+	padding-right: 130px;
+	padding-left: 0px;
+	overflow: hidden;
+	zoom: 1;
+}
+.ui_select_sl_v_list {
+	overflow: hidden;
+	zoom: 1;
+}
+.ui_select_sl_v_list ul {
+	margin: 0;
+    padding: 0;
+	list-style:none;
+	padding-top: 5px;
+	float: left;
+	overflow: hidden;
+	zoom: 1;
+	position: relative;
+}
+.ui_select_sl_v_list ul.disabled {
+	outline: 0 none;
+	cursor: default !important;
+	opacity: .4;
+	pointer-events: none;
+}
+
+.ui_select_sl_v_list li {
+	float: left;
+	_display: inline;
+	margin-right: 10px;
+	height: 25px;
+	line-height: 25px;
+}
+.ui_select_sl_v_list li.disabled {
+	outline: 0 none;
+	cursor: default !important;
+	opacity: .4;
+	pointer-events: none;
+}
+.ui_select_sl_v_list li.letter {
+	/*float: right;*/
+	clear: left;
+}
+.ui_select_sl_v_list li span {
+	display: inline;
+	padding: .2em .6em .3em;
+	line-height: 1;
+	text-align: center;
+	vertical-align: baseline;
+	border-radius: .25em;
+	font-size: 13px;
+	font-weight: normal;
+	/*background-color: white !important;*/
+	cursor: pointer;
+	float: left;
+	white-space: nowrap;
+	zoom: 1;
+	color: #337ab7 !important;
+	min-width: 60px;
+}
+.ui_select_sl_v_list li.selected span{
+	background-color: #337ab7 !important;
+	color: white !important;
+}
+.ui_select_sl_v_list li span.letter {
+	cursor: default;
+	/*color: #5cb85c !important;*/
+	font-weight: bold;
+}
+.ui_select_sl_v_list li.selected span.letter{
+	background-color: white !important;
+}
